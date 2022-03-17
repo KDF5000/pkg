@@ -1,0 +1,4 @@
+some useful package for golang development
+
+- log: a log wrapper based on zap log
+- larkbot: a lark bot message builder to send message more easily
