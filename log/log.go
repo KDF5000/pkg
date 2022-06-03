@@ -180,7 +180,7 @@ type Logger struct {
 	level Level
 }
 
-var std = New(os.Stderr, InfoLevel, WithCaller(true))
+var std = New(os.Stderr, InfoLevel, WithCaller(true), AddCallerSkip(1))
 
 func Default() *Logger {
 	return std
@@ -191,6 +191,7 @@ type Option = zap.Option
 var (
 	WithCaller    = zap.WithCaller
 	AddStacktrace = zap.AddStacktrace
+	AddCallerSkip = zap.AddCallerSkip
 )
 
 type RotateOptions struct {
@@ -261,8 +262,11 @@ func New(writer io.Writer, level Level, opts ...Option) *Logger {
 		zapcore.AddSync(writer),
 		zapcore.Level(level),
 	)
+
+	zapLogger := zap.New(core, opts...)
 	logger := &Logger{
-		l:     zap.New(core, opts...),
+		l:     zapLogger,
+		sl:    zapLogger.Sugar(),
 		level: level,
 	}
 	return logger
