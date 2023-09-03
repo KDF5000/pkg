@@ -15,6 +15,7 @@ require (
 	github.com/go-redis/redis v6.15.6+incompatible // indirect
 	github.com/google/uuid v1.1.1 // indirect
 	github.com/hashicorp/golang-lru v0.5.3 // indirect
+	github.com/larksuite/oapi-sdk-go/v3 v3.0.29 // indirect
 	github.com/rifflock/lfshook v0.0.0-20180920164130-b9218ef580f5 // indirect
 	github.com/sirupsen/logrus v1.7.0 // indirect
 	go.uber.org/atomic v1.7.0 // indirect

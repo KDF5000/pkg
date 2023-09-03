@@ -55,6 +55,8 @@ github.com/larksuite/botframework-go v0.0.0-20210409135442-ff14b99e324b h1:UriH+
 github.com/larksuite/botframework-go v0.0.0-20210409135442-ff14b99e324b/go.mod h1:rPpc8U6EHNLFl8YYZZQEXqa9sKzwP9eG8kotf/MFSBA=
 github.com/larksuite/oapi-sdk-go v1.1.44 h1:PbwrHpew5eyRxUNJ9h91wDL0V1HDDFqMjIWOmttRpA4=
 github.com/larksuite/oapi-sdk-go v1.1.44/go.mod h1:7ybKAbVdKBjXuX0YrMTfnWUyCaIe/zeI1wqjNfN9XOk=
+github.com/larksuite/oapi-sdk-go/v3 v3.0.29 h1:WLBeOkUh8emL9wYUZ49CbWjGMkjCxQoNavbLRYYMu+A=
+github.com/larksuite/oapi-sdk-go/v3 v3.0.29/go.mod h1:FKi8vBgtkBt/xNRQUwdWvoDmsPh7/wP75Sn5IBIBQLk=
 github.com/leodido/go-urn v1.2.0/go.mod h1:+8+nEpDfqqsY+g338gtMEUOtuK+4dEMhiQEgxpxOKII=
 github.com/mattn/go-isatty v0.0.7/go.mod h1:Iq45c/XA43vh69/j3iqttzPXn0bhXyGjM0Hdxcsrc5s=
 github.com/mattn/go-isatty v0.0.12/go.mod h1:cbi8OIDigv2wuxKPP5vlRcQ1OAZbq2CE4Kysco4FUpU=
