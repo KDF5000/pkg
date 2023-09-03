@@ -6,7 +6,6 @@ import (
 	"log"
 
 	lark "github.com/larksuite/oapi-sdk-go/v3"
-	larkcore "github.com/larksuite/oapi-sdk-go/v3/core"
 	larkdocx "github.com/larksuite/oapi-sdk-go/v3/service/docx/v1"
 	larkdrive "github.com/larksuite/oapi-sdk-go/v3/service/drive/v1"
 )
@@ -31,7 +30,7 @@ type LarkDocV2 struct {
 func NewLarkDocV2(opt DocOption) *LarkDocV2 {
 	return &LarkDocV2{
 		option: opt,
-		client: lark.NewClient(opt.AppID, opt.AppSecret, lark.WithLogLevel(larkcore.LogLevelDebug)),
+		client: lark.NewClient(opt.AppID, opt.AppSecret),
 	}
 }
 
